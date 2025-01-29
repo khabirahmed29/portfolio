@@ -70,7 +70,7 @@ export default function Home() {
               <a href="https://github.com/khabirahmed29">
                 <AiFillGithub />
               </a>
-              <a href="https://leetcode.com/">
+              <a href="https://leetcode.com/u/khabir_ahmed/">
                 <SiLeetcode />
               </a>
             </div>
