@@ -9,12 +9,14 @@ import deved from "../public/dev-ed-wave.png";
 // import design from "../public/design.png";
 // import consulting from "../public/consulting.png";
 import Image from "next/image";
-// import web1 from "../public/web1.png";
-// import web2 from "../public/web2.png";
-// import web3 from "../public/web3.png";
-// import web4 from "../public/web4.png";
-// import web5 from "../public/web5.png";
-// import web6 from "../public/web6.png";
+import web1 from "../public/web1.png";
+import web2 from "../public/web2.png";
+import web3 from "../public/web3.png";
+import web4 from "../public/web4.png";
+import web5 from "../public/web5.png";
+import web6 from "../public/web6.png";
+import docmedp from "../public/docmed.png";
+import docmed2 from "../public/docmed2.png";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -94,6 +96,99 @@ export default function Home() {
         {/* <section>
           <h3 className="text-3xl py-1 dark:text-white">Projects</h3>
         </section> */}
+        <section className="py-10">
+          <div>
+            <h3 className="text-3xl py-1 dark:text-white ">Projects</h3>
+            <h4 className="text-3xl py-1 dark:text-white ">
+              Full Stack Project
+            </h4>
+            <h3 className="text-2xl py-1 dark:text-white ">
+              <a href="https://github.com/khabirahmed29/DOC-MED"> Docmed</a>
+            </h3>
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+              Docmed is a full-stack medical appointment management system
+              designed to streamline healthcare services. It allows patients to
+              book appointments, doctors to manage their schedules, and admins
+              to oversee the entire system. The platform features secure
+              authentication, real-time notifications, and an intuitive user
+              interface. Built with React.js for the frontend, Node.js &
+              Express.js for the backend, and MongoDB for the database, Docmed
+              ensures a seamless experience for both patients and healthcare
+              providers.
+            </p>
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+              Docmed is built using React.js, Redux, Ant Design, Axios
+              (Frontend), Node.js, Express.js, JWT (Backend), and MongoDB
+              (Database) for a seamless medical appointment management system.
+              🚀
+            </p>
+          </div>
+          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap ">
+            <div className="basis-1/3 flex-1">
+              <Image
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                src={docmedp}
+              />
+            </div>
+            <div className="basis-1/3 flex-1">
+              <Image
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                src={docmed2}
+              />
+            </div>
+            {/* <div className="basis-1/3 flex-1">
+              <Image
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                src={web2}
+              />
+            </div>
+            <div className="basis-1/3 flex-1">
+              <Image
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                src={web3}
+              />
+            </div>
+            <div className="basis-1/3 flex-1">
+              <Image
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                src={web4}
+              />
+            </div>
+            <div className="basis-1/3 flex-1">
+              <Image
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                src={web5}
+              />
+            </div>
+            <div className="basis-1/3 flex-1">
+              <Image
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                src={web6}
+              />
+            </div> */}
+          </div>
+        </section>
       </main>
     </div>
   );
