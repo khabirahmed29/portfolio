@@ -9,14 +9,16 @@ import deved from "../public/dev-ed-wave.png";
 // import design from "../public/design.png";
 // import consulting from "../public/consulting.png";
 import Image from "next/image";
-import web1 from "../public/web1.png";
-import web2 from "../public/web2.png";
-import web3 from "../public/web3.png";
-import web4 from "../public/web4.png";
-import web5 from "../public/web5.png";
-import web6 from "../public/web6.png";
+// import web1 from "../public/web1.png";
+// import web2 from "../public/web2.png";
+// import web3 from "../public/web3.png";
+// import web4 from "../public/web4.png";
+// import web5 from "../public/web5.png";
+// import web6 from "../public/web6.png";
 import docmedp from "../public/docmed.png";
 import docmed2 from "../public/docmed2.png";
+import intern1 from "../public/intern1.png";
+import intern2 from "../public/intern2.png";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -57,7 +59,7 @@ export default function Home() {
               "Hi, I'm Khabir Ahmed - a Full Stack Web Developer crafting
               seamless web experiences."
             </h3>
-            <p>
+            <p className="dark:text-white">
               Passionate about building intuitive and scalable web applications.
               Experienced with React.js, MERN Stack, and API integrations.
               Strong problem-solving skills.
@@ -93,18 +95,19 @@ export default function Home() {
             </p>
           </div>
         </section>
-        {/* <section>
-          <h3 className="text-3xl py-1 dark:text-white">Projects</h3>
-        </section> */}
         <section className="py-10">
           <div>
             <h3 className="text-3xl py-1 dark:text-white ">Projects</h3>
             <h4 className="text-3xl py-1 dark:text-white ">
               Full Stack Project
             </h4>
-            <h3 className="text-2xl py-1 dark:text-white ">
-              <a href="https://github.com/khabirahmed29/DOC-MED"> Docmed</a>
-            </h3>
+            <h3 className="text-2xl py-1 dark:text-white ">Docmed</h3>
+            <a
+              href="https://github.com/khabirahmed29/DOC-MED"
+              className="dark:text-white hover:underline"
+            >
+              Source Code
+            </a>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Docmed is a full-stack medical appointment management system
               designed to streamline healthcare services. It allows patients to
@@ -142,13 +145,37 @@ export default function Home() {
                 src={docmed2}
               />
             </div>
-            {/* <div className="basis-1/3 flex-1">
+          </div>
+          <div>
+            <h4 className="text-3xl py-1 dark:text-white ">
+              Full Stack Project
+            </h4>
+            <h3 className="text-2xl py-1 dark:text-white ">SmartStudy</h3>
+            <a
+              href="https://github.com/mdekaa/SmartStudy"
+              className="dark:text-white hover:underline"
+            >
+              Source Code
+            </a>
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+              SmartStudy is a platform where you can predict your CGPA for the
+              upcoming semesters. It offers accurate predictions, user-friendly
+              interface, comprehensive insights, goal settings and doubt solving
+              .
+            </p>
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+              SmartStudy is built using NEXT.js, Node.js, Express.js, Clerk, and
+              MongoDB (Database) for a seamless CGPA prediction. 🚀
+            </p>
+          </div>
+          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap ">
+            <div className="basis-1/3 flex-1">
               <Image
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
-                src={web2}
+                src={intern2}
               />
             </div>
             <div className="basis-1/3 flex-1">
@@ -157,36 +184,9 @@ export default function Home() {
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
-                src={web3}
+                src={intern1}
               />
             </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web4}
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web5}
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web6}
-              />
-            </div> */}
           </div>
         </section>
       </main>
